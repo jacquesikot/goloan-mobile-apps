@@ -1,1 +1,1 @@
-export { HomeIcon, TransactionsIcon, SupportIcon, ProfileIcon } from './HomeNavIcons';
+export { HomeIcon, TransactionsIcon, SupportIcon, ProfileIcon, ServicesIcon } from './HomeNavIcons';

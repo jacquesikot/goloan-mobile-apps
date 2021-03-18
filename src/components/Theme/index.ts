@@ -7,10 +7,11 @@ const theme = createTheme({
     white: '#FFFFFF',
     dark: '#100A39',
     grey: '#473D8E66',
-    light: '#00000014',
+    light: '#F3F3F8',
     red: '#FF628D',
     yellow: '##FCAA15',
     black: '##000000',
+    subText: 'rgba(16, 10, 57, 0.5)',
   },
   spacing: {
     s: 5,
