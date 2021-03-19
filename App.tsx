@@ -9,7 +9,7 @@ import * as Font from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 
 // import { cacheResourceAsync } from './src/utils';
-import { AuthNav } from './src/navigation';
+import { AppNav } from './src/navigation';
 import { navigationRef } from './src/navigation';
 
 const customFonts = {
@@ -47,7 +47,7 @@ export default function App() {
     <AppLoading />
   ) : (
     <NavigationContainer ref={navigationRef}>
-      <AuthNav />
+      <AppNav />
       <StatusBar style="auto" backgroundColor="#fffff" />
       <Toast ref={(ref) => Toast.setRef(ref)} />
     </NavigationContainer>

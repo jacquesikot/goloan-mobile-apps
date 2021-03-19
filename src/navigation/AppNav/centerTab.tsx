@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, TouchableWithoutFeedback } from 'react-native';
 
 import { theme } from '../../components';
-import { ProfileIcon } from '../../svg';
+import { ServicesIcon } from '../../svg';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,7 +20,7 @@ const CenterTab = ({ onPress }: any) => {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.container}>
-        <ProfileIcon color={theme.colors.white} />
+        <ServicesIcon color={theme.colors.white} />
       </View>
     </TouchableWithoutFeedback>
   );

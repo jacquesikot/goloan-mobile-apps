@@ -13,4 +13,11 @@ type AppNavParamList = {
   Profile: undefined;
 };
 
-export { AuthParamList, AppNavParamList };
+type HomeNavParamList = {
+  Home: undefined;
+  Notifications: undefined;
+  Borrow: undefined;
+  Lend: undefined;
+};
+
+export { AuthParamList, AppNavParamList, HomeNavParamList };

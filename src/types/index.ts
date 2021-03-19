@@ -1,1 +1,1 @@
-export { AuthParamList, AppNavParamList } from './navigation.types';
+export { AuthParamList, AppNavParamList, HomeNavParamList } from './navigation.types';

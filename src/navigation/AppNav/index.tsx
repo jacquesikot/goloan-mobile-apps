@@ -8,8 +8,9 @@ import styles from './styles';
 import CenterTab from './centerTab';
 import { theme } from '../../components';
 import { AppNavParamList } from '../../types';
-import { home, transactions, services, support, profile } from '../../screens';
+import { transactions, services, support, profile } from '../../screens';
 import { HomeIcon, TransactionsIcon, SupportIcon, ProfileIcon } from '../../svg';
+import HomeNav from '../HomeNav';
 
 const AppStack = createBottomTabNavigator<AppNavParamList>();
 
@@ -26,7 +27,7 @@ const AppNav = () => {
       }}>
       <AppStack.Screen
         name="Home"
-        component={home}
+        component={HomeNav}
         options={{
           tabBarIcon: ({ color }) => {
             return <HomeIcon color={color} />;

@@ -8,3 +8,6 @@ export { default as transactions } from './transactions';
 export { default as services } from './services';
 export { default as support } from './support';
 export { default as profile } from './profile';
+export { default as notifications } from './notifications';
+export { default as borrow } from './borrow';
+export { default as lend } from './lend';
