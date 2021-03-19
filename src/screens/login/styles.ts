@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   registerContainer: {
     flexDirection: 'row',
-    paddingBottom: hp('8%'),
+    paddingBottom: hp('3%'),
     paddingTop: hp('5%'),
   },
   registerTest1: {
