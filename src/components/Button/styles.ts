@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 import { theme } from '../../components';
 
@@ -11,7 +12,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontFamily: 'ProductSans-Regular',
     color: theme.colors.white,
-    fontSize: 18,
+    fontSize: wp('4%'),
     letterSpacing: 0.6,
   },
 });

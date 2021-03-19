@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Image } from 'react-native';
 
-import styles, { SCREEN_WIDTH } from './styles';
+import styles, { SCREEN_WIDTH, IMAGE_FORM_FACTOR, SCREEN_HORIZONTAL_PADDING } from './styles';
 import { Text } from '../../components';
 
-const IMAGE_WIDTH = SCREEN_WIDTH - 40;
+const IMAGE_WIDTH = SCREEN_WIDTH - SCREEN_HORIZONTAL_PADDING;
 
 interface Props {
   image: number;
@@ -20,7 +20,7 @@ const Onboarding = ({ image, topText, bottomText }: Props) => {
           source={image}
           style={{
             width: IMAGE_WIDTH,
-            height: IMAGE_WIDTH / 1.84,
+            height: IMAGE_WIDTH / IMAGE_FORM_FACTOR,
           }}
         />
       </View>

@@ -7,7 +7,8 @@ import {
 import { theme } from '../../components';
 
 const { width } = Dimensions.get('window');
-export const SCREEN_WIDTH = width - 40;
+export const SCREEN_HORIZONTAL_PADDING = 40;
+export const SCREEN_WIDTH = width - SCREEN_HORIZONTAL_PADDING;
 export const IMAGE_FORM_FACTOR = 1.84;
 
 const styles = StyleSheet.create({
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     height: SCREEN_WIDTH / IMAGE_FORM_FACTOR,
   },
   textContainer: {
-    width: SCREEN_WIDTH - 20,
+    width: SCREEN_WIDTH,
   },
   topText: {
     fontFamily: 'ProductSans-Regular',
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
   },
   bottomText: {
     fontFamily: 'ProductSans-Regular',
-    fontSize: wp('4.8%'),
+    fontSize: wp('5%'),
     color: theme.colors.subText,
     textAlign: 'center',
     marginBottom: hp('1%'),

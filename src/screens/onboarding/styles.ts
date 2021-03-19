@@ -1,13 +1,13 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import {
-  // widthPercentageToDP as wp,
+  widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
 import { theme } from '../../components';
 
 const { width } = Dimensions.get('window');
-export const SCREEN_WIDTH = width - 40;
+export const SCREEN_WIDTH = width - theme.spacing.screenPadding;
 
 const styles = StyleSheet.create({
   page: {
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   dotContainer: {
     flexDirection: 'row',
+    marginBottom: hp('5%'),
   },
   buttonContainer: {
     width: SCREEN_WIDTH,
@@ -33,7 +34,8 @@ const styles = StyleSheet.create({
   },
   prevText: {
     fontFamily: 'ProductSans-Regular',
-    fontSize: 20,
+    fontSize: wp('4%'),
+    letterSpacing: 0.6,
     color: theme.colors.subText,
   },
 });

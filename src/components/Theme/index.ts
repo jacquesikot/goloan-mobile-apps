@@ -18,6 +18,7 @@ const theme = createTheme({
     m: 10,
     l: 15,
     xl: 20,
+    screenPadding: 40,
   },
   borderRadii: {
     none: 0,
