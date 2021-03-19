@@ -7,14 +7,14 @@ import {
 import { theme } from '../../components';
 
 const { width } = Dimensions.get('window');
-export const SCREEN_WIDTH = width - theme.spacing.screenPadding;
+export const SCREEN_WIDTH = width - theme.constants.screenPadding;
 
 const styles = StyleSheet.create({
   page: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.colors.white,
+    backgroundColor: theme.colors.light,
   },
   sliderContainer: {
     justifyContent: 'center',

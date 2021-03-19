@@ -1,4 +1,7 @@
 import { createTheme, createText } from '@shopify/restyle';
+import { Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 const theme = createTheme({
   colors: {
@@ -7,18 +10,23 @@ const theme = createTheme({
     white: '#FFFFFF',
     dark: '#100A39',
     grey: '#473D8E66',
-    light: '#F3F3F8',
+    green: 'green',
+    light: '#f3f3f8',
     red: '#FF628D',
     yellow: '##FCAA15',
     black: '##000000',
     subText: 'rgba(16, 10, 57, 0.5)',
+  },
+  constants: {
+    masterWidth: width,
+    screenWidth: width - 40,
+    screenPadding: 40,
   },
   spacing: {
     s: 5,
     m: 10,
     l: 15,
     xl: 20,
-    screenPadding: 40,
   },
   borderRadii: {
     none: 0,

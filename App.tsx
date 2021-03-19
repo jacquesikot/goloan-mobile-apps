@@ -31,8 +31,12 @@ export default function App() {
   const [isReady, setIsReady] = useState<boolean>(false);
 
   const _loadFontASync = async () => {
-    await Font.loadAsync(customFonts);
-    setIsReady(true);
+    try {
+      await Font.loadAsync(customFonts);
+      setIsReady(true);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
@@ -44,7 +48,7 @@ export default function App() {
   ) : (
     <NavigationContainer ref={navigationRef}>
       <AuthNav />
-      <StatusBar style="auto" />
+      <StatusBar style="auto" backgroundColor="#fffff" />
       <Toast ref={(ref) => Toast.setRef(ref)} />
     </NavigationContainer>
   );

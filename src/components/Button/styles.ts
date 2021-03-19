@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 16,
   },
   buttonText: {
-    fontFamily: 'ProductSans-Regular',
+    fontFamily: 'ProductSans-Medium',
     color: theme.colors.white,
-    fontSize: wp('4%'),
+    fontSize: wp('4.5%'),
     letterSpacing: 0.6,
   },
 });

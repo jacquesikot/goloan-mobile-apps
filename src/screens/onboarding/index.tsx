@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useState } from 'react';
-import { View, Animated, Text } from 'react-native';
+import { View, Animated, Text, SafeAreaView } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { StackScreenProps } from '@react-navigation/stack';
 
@@ -27,7 +27,7 @@ const Onboarding = ({ navigation }: StackScreenProps<AuthParamList, 'OnBoarding'
   const slidesRef = useRef(null);
 
   return (
-    <View style={styles.page}>
+    <SafeAreaView style={styles.page}>
       <View style={styles.sliderContainer}>
         <Animated.FlatList
           data={data}
@@ -82,7 +82,7 @@ const Onboarding = ({ navigation }: StackScreenProps<AuthParamList, 'OnBoarding'
           }}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

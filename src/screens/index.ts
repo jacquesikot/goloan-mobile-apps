@@ -1,6 +1,6 @@
 export { default as onBoarding } from './onboarding';
 export { default as login } from './login';
-export { default as register } from './login';
+export { default as register } from './register';
 export { default as forgotPassword } from './forgotPassword';
 
 export { default as home } from './home';
