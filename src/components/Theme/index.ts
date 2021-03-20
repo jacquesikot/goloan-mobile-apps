@@ -8,6 +8,7 @@ const theme = createTheme({
     primary: '#100A39',
     secondary: '#FF628D',
     white: '#FFFFFF',
+    peach: '#fbebef',
     dark: '#100A39',
     grey: '#473D8E66',
     green: 'green',
